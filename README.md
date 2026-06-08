@@ -6,11 +6,11 @@ Nama: Finodya Yahdun
 
 ## Output 1
 
-![RESULT 1](assets/output-main.png)
+![RESULT 1](assets/output main.png)
 
 ## Output 2
 
-![Challenge 2](assets/output-test.png)
+![Challenge 2](assets/output test.png)
 
 
 ### Apa fungsi @ConfigurationProperties?
