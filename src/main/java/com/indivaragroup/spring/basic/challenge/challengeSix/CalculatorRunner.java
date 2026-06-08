@@ -1,14 +1,11 @@
 package com.indivaragroup.spring.basic.challenge.challengeSix;
 
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 public class CalculatorRunner {
 
     private final CalculatorService calculatorService;
-
-    public CalculatorRunner(
-            CalculatorService calculatorService
-    ) {
-        this.calculatorService = calculatorService;
-    }
 
     public void run() {
 

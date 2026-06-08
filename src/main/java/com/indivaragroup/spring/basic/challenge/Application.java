@@ -1,5 +1,7 @@
 package com.indivaragroup.spring.basic.challenge;
 
+import com.indivaragroup.spring.basic.challenge.challengeBall.BallConfiguration;
+import com.indivaragroup.spring.basic.challenge.challengeBall.BallRunner;
 import com.indivaragroup.spring.basic.challenge.challengeEight.StudentConfiguration;
 import com.indivaragroup.spring.basic.challenge.challengeEight.StudentRunner;
 import com.indivaragroup.spring.basic.challenge.challengeFive.AppConfiguration;
@@ -110,5 +112,11 @@ public class Application {
 		LibraryRunner libraryRunner = contextFinalChallenge.getBean(LibraryRunner.class);
 		libraryRunner.run();
 		contextFinalChallenge.close();
+
+		System.out.println("\n========== CHALLENGE BALL ==========");
+		var contextBall = new AnnotationConfigApplicationContext(BallConfiguration.class);
+		BallRunner ballRunner = contextBall.getBean(BallRunner.class);
+		ballRunner.run();
+		contextBall.close();
 	}
 }
